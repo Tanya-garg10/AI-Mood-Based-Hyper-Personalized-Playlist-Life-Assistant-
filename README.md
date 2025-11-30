@@ -109,6 +109,3 @@ Contributions are welcome!
 
 This project is licensed under the MIT License.
   
-
-Kya main ye ready folder structure bana du?
-```
