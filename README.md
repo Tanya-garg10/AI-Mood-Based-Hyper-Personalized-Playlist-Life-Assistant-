@@ -1,135 +1,114 @@
-AI Mood-Based Hyper-Personalized Playlist & Life-Assistant 🎧🧠
+# 🎧 AI Mood-Based Hyper-Personalized Playlist & Life-Assistant
 
-A multi-agent system that detects your mood from text, generates personalized music playlists, and provides productivity and self-care recommendations — all in one place.
+![Python](https://img.shields.io/badge/Python-3.10+-blue) 
+![Streamlit](https://img.shields.io/badge/Streamlit-v1.26-orange) 
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Project Overview
+A **multi-agent AI system** that detects your mood from text, generates personalized playlists, and provides productivity & self-care recommendations — all in one place.  
 
-Humari daily life emotionally complex aur fast-paced hai. Users ko mood ke hisaab se music, productivity schedule, meditation aur journaling alag-alag apps me manage karna padta hai.
+## 🔹 Project Overview
 
-Solution:
-A multi-agent AI system that:
+Managing mood, music, and productivity often requires multiple apps. This project solves that by providing a **single AI assistant** which:
 
-Detects user mood from text input
+- Detects mood from text input (journal/chat)  
+- Suggests personalized music playlists (Spotify/YouTube)  
+- Recommends lifestyle actions: meditation, breaks, affirmations  
+- Tracks past moods for better personalization  
 
-Generates personalized playlists (Spotify / YouTube)
+**Agents Used:**
 
-Suggests lifestyle actions like meditation, breaks, and affirmations
+| Agent | Function |
+|-------|---------|
+| Mood Detection | NLP-based sentiment analysis (text/journal/chat) |
+| Music Recommendation | Playlist suggestions based on mood |
+| Lifestyle Coach | Productivity schedule, meditation prompts, affirmations |
+| Memory | Stores past moods for continuous personalization |
 
-Stores mood history for personalized recommendations over time
+## 🔹 Demo Video
 
-Agents:
+(https://drive.google.com/file/d/11nAeFWhV2bcW-tbqUlcQNPH9vd6jFAZR/view?usp=drive_link)  
+*Streamlit interface with mood input, playlist, and recommendations.*
 
-Agent	Task
-Mood Detection	NLP-based sentiment analysis (text / voice / chat / journal)
-Music Recommendation	Playlist suggestion using mood tags
-Lifestyle Coach	Productivity schedule, meditation prompts, affirmations
-Memory	Stores past moods for continuous personalization
-Demo Screenshot / UI
+## 🔹 Features
 
-Streamlit interface with:
+- Multi-agent modular architecture  
+- Real-time mood detection (keyword-based demo, can upgrade to Gemini/GPT)  
+- Mood-based playlist recommendations (static demo, can integrate Spotify API)  
+- Personalized lifestyle & productivity guidance  
+- Mood history tracking  
+- Streamlit UI for easy interaction  
 
-Text input for mood/journal
+## 🔹 Tech Stack
 
-Button to get suggestions
+- **Python 3.10+** – Core programming language  
+- **Streamlit** – Interactive UI  
+- **SQLite** – Memory agent & mood history storage  
+- **Spotipy / YouTube API** – Playlist integration (optional)  
+- **Gemini / GPT API** – Advanced mood detection (optional)  
 
-Display detected mood, recommended playlist, and lifestyle actions
+## 🔹 Installation
 
-Mood history from Memory Agent
-
-Features
-
-Multi-agent modular architecture
-
-Real-time mood detection (demo: keyword-based; can upgrade to Gemini/GPT)
-
-Personalized playlist suggestions (demo: static; can integrate Spotify API)
-
-Lifestyle & productivity recommendations based on emotional state
-
-Mood history tracking for improved personalization
-
-Easy-to-use Streamlit interface
-
-Tech Stack
-
-Python 3.x – Core language
-
-Streamlit – Web-based interactive UI
-
-SQLite – Memory agent & mood history storage
-
-Spotipy / YouTube API – Mood-based playlists (optional)
-
-Gemini / GPT API – Advanced mood detection (optional)
-
-Installation & Setup
-
-Clone the repository:
-
+1. Clone the repo:  
+```bash
 git clone https://github.com/yourusername/AI-Mood-Life-Assistant.git
 cd AI-Mood-Life-Assistant
+````
 
+2. Create and activate virtual environment:
 
-Create and activate virtual environment:
-
+```bash
 python -m venv env
 # Windows
 env\Scripts\activate
 # Mac/Linux
 source env/bin/activate
+```
 
+3. Install dependencies:
 
-Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
 
+4. Run the app:
 
-Run the Streamlit app:
-
+```bash
 streamlit run app.py
+```
 
-Usage
+## 🔹 Usage
 
-Enter your mood/journal text in the input box.
+1. Enter your mood/journal text.
+2. Click **Get Suggestions**.
+3. View:
 
-Click Get Suggestions.
+   * Detected Mood
+   * Suggested Playlist
+   * Lifestyle Recommendations
+   * Last 5 Mood Entries
 
-View:
+## 🔹 Future Enhancements
 
-Detected mood
+* Spotify API / YouTube API real playlist fetch
+* Gemini / GPT API for advanced sentiment analysis
+* Heart-rate based mood detection via wearables
+* AI voice assistant for hands-free operation
+* Daily/weekly emotion trends & visualization
 
-Suggested playlist
-
-Lifestyle recommendations
-
-Last 5 mood entries
-
-Future Enhancements
-
-Integrate Spotify API / YouTube API to fetch real playlists
-
-Use Gemini or GPT API for advanced sentiment/mood detection
-
-Integrate wearables for heart-rate-based mood detection
-
-Add AI voice assistant for hands-free interaction
-
-Advanced mood analytics with graphs and trends
-
-Contributing
+## 🔹 Contributing
 
 Contributions are welcome!
 
-Fork the repository
+1. Fork the repo
+2. Create a new branch: `git checkout -b feature-name`
+3. Commit changes: `git commit -m "Add new feature"`
+4. Push: `git push origin feature-name`
+5. Open a Pull Request
 
-Create a feature branch (git checkout -b feature-name)
+## 🔹 License
 
-Commit changes (git commit -m "Add feature")
+This project is licensed under the MIT License.
+  
 
-Push to branch (git push origin feature-name)
-
-Open a Pull Request
-
-License
-
-This project is open-source and available under the MIT License.
+Kya main ye ready folder structure bana du?
+```
